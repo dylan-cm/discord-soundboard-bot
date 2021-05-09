@@ -1,0 +1,15 @@
+{
+  "name": "soundboard-bot",
+  "version": "1.0.0",
+  "description": "A Discord bot that plays fun sounds to your voice channel.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discord",
+    "bot"
+  ],
+  "author": "Dylan Cortez-Modell",
+  "license": "Apache-2.0"
+}
