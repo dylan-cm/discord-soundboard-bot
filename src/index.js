@@ -36,3 +36,10 @@ client.on('message', message => {
 });
 
 client.login(process.env.BOT_TOKEN)
+
+const http = require('http');
+const server = http.createServer((req, res) => {
+  res.writeHead(200);
+  res.end('ok');
+});
+server.listen(3000);
