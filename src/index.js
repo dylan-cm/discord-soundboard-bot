@@ -16,7 +16,7 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`)
 });
 
-let prefix = process.env.PREFIX
+let prefix = process.env.['PREFIX']
 
 client.on('message', message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return
@@ -35,7 +35,7 @@ client.on('message', message => {
 	}
 });
 
-client.login(process.env.BOT_TOKEN)
+client.login(process.env['BOT_TOKEN'])
 
 const http = require('http');
 const server = http.createServer((req, res) => {
