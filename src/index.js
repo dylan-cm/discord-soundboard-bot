@@ -16,7 +16,7 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`)
 });
 
-let prefix = process.env.['PREFIX']
+let prefix = process.env['PREFIX']
 
 client.on('message', message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return
